@@ -28,6 +28,8 @@ jobs:
           haxelib setup "%HAXELIB_ROOT%"
           haxelib install lime 7.9.0
           RefreshEnv
+          haxelib install lime 7.9.0
+          RefreshEnv
           haxelib install openfl
           haxelib install flixel
           haxelib run lime setup flixel
@@ -38,6 +40,7 @@ jobs:
           haxelib install hscript
           haxelib install flixel-addons
           haxelib install newgrounds
+          haxelib install systools
           haxelib git faxe https://github.com/uhrobots/faxe
           haxelib git polymod https://github.com/MasterEric/polymod.git
           haxelib git discord_rpc https://github.com/Aidan63/linc_discord-rpc
@@ -45,6 +48,8 @@ jobs:
           haxelib run lime rebuild extension-webm windows
           haxelib git linc_luajit https://github.com/nebulazorua/linc_luajit.git
           haxelib git hxvm-luajit https://github.com/nebulazorua/hxvm-luajit
+          haxelib git systools https://github.com/haya3218/systools
+          haxelib run lime rebuild systools windows
           haxelib install actuate 
           haxelib run lime build html5
           
